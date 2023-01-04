@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>NADA</title>
-</head>
-<body>
+<script>
+  // Obtém a data atual
+  var dataAtual = new Date();
 
-  <iframe src="Do Alto - Food.pdf" width="100%" height="1000px"></iframe>
-  
-</body>
-</html>
+  // Formata a data no formato dd/mm/yyyy
+  var dataFormatada = dataAtual.getDate() + '/' + (dataAtual.getMonth()+1) + '/' + dataAtual.getFullYear();
+
+  // Atribui a data atual ao campo de data
+  document.getElementById('data').value = dataFormatada;
+</script>
+
+<input type="date" id="data" name="data" value="" class="date" readonly>
+
+
